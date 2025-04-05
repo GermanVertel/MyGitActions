@@ -9,6 +9,7 @@ on:
 jobs:
   hello:
     runs-on: ubuntu-latest
+
     steps:     
       - name: Say Hello
         run: echo "¡Hola, GitHub Actions!"
@@ -18,4 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:     
       - name: LS
-        run: ls -la
+        run: ls -al
