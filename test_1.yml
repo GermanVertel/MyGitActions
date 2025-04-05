@@ -10,7 +10,9 @@ jobs:
   hello:
     runs-on: ubuntu-latest
 
-    steps:     
+    steps:
+      - uses: actions/checkout@v2 # Añadir este paso primero
+
       - name: Say Hello
         run: echo "¡Hola, GitHub Actions!"
 
@@ -23,11 +25,8 @@ jobs:
       - name: read file
         run: cat hello.txt
 
-
-
-
   other:
     runs-on: ubuntu-latest
-    steps:     
+    steps:
       - name: LS
         run: ls -al
