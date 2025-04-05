@@ -14,6 +14,17 @@ jobs:
       - name: Say Hello
         run: echo "¡Hola, GitHub Actions!"
 
+      - name: touch file
+        run: touch hello.txt
+
+      - name: set text
+        run: echo "hola mundo" >> hello.txt
+
+      - name: read file
+        run: cat hello.txt
+
+
+
 
   other:
     runs-on: ubuntu-latest
